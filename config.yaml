@@ -1,0 +1,54 @@
+name: ClientWorker Docs Config
+cleaninterval: 1000*20 # 每20秒检测并清理一次
+
+catch_rules: #转换规则
+    - rule: _ #ClientWorker语法糖，匹配当前域，返回一个域名带端口
+      transform_rules: #转换规则，最上面的优先最高
+        - search: \#.* #在发送请求时匹配#后内容并移除
+          replace: ''
+
+        - search: \?.* #在发送请求时匹配?后内容并移除，仅限静态请求
+          replace: ''
+
+        - search: (^4|^5) 
+          searchin: status 
+          action: redirect
+          redirect: 
+            url: https://npm.elemecdn.com/haor-blog-404/index.html
+
+        - search: ([^\/.]+)\/$
+          replace: $1/index.html
+          
+        - search: _ 
+          replace: 
+          - _ 
+          - npm.elemecdn.com/haor-blog-main@1670327471203
+          - npm.sourcegcdn.com/haor-blog-main@1670327471203
+          - blogcf.abeginner.cn
+
+
+        - search: haorblog\.adhy\.cc
+          action: skip
+
+        - search: https:\/\/blog.abeginner.cn\/false
+          action: return
+          redirect: 
+            status: 404
+
+
+        - search: \.html$
+          header:
+            Content-Type: text/html;charset=UTF-8 #修复标头
+
+        - search: _
+          action: fetch
+          fetch:
+            status: 200
+            engine: parallel
+            preflight: false
+            timeout: 5000
+            cache:
+              expire: 1000*60*60*8
+              delay: 200
+
+        

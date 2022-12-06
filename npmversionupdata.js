@@ -20,7 +20,7 @@ function changeJson(timestamp){
 }
 function changeconfig(timestamp) {
     fs.readFile('config.yaml','utf8',function(err,files){
-        var result = files.replace(/1.0.000919/g, timestamp);
+        var result = files.replace(/1.0.000919/g,"1.0." + timestamp);
         console.log("ok")
         fs.writeFile('config.yaml', result, 'utf8', function (err) {
              if (err) return console.log(err);

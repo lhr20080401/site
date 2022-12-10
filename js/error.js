@@ -1,5 +1,5 @@
 window.onerror = function(error) {
-    str = str(error.filename)
+    str = error.filename;
     var index = str.indexOf("cw.js");
     if (index != -1) {
       // 如果找到了子字符串，则执行以下语句

@@ -17,3 +17,4 @@ function percent() {
 
   result <= 99 || (result = 99), (btn.innerHTML = result);
 }
+

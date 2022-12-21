@@ -490,6 +490,9 @@ body{
 }
 .recent-post-item{
   -webkit-box-shadow: none!important;
+  border: var(--style-border-always)!important;
+  box-shadow: var(--anzhiyu-shadow-border)!important;
+  background: var(--anzhiyu-card-bg)!important;
 }
 .pace {
   pointer-events: none;
@@ -643,7 +646,6 @@ img.footer_mini_logo:hover {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    z-index: 1002
 }
 
 @media screen and (max-width: 768px) {
@@ -943,5 +945,17 @@ img.footer_mini_logo:hover {
   --lyx-white-acrylic2:#fffa;
   --lyx-black-acrylic2: #000a;
 }
-
-
+.card-widget{
+  border: var(--style-border-always)!important;
+  box-shadow: var(--anzhiyu-shadow-border)!important;
+  background: var(--anzhiyu-card-bg)!important;
+}
+#post{
+  border: var(--style-border-always)!important;
+  box-shadow: var(--anzhiyu-shadow-border)!important;
+  background: var(--anzhiyu-card-bg)!important;
+}
+.deal_link{
+  color: none!important;
+  background: none!important;
+}

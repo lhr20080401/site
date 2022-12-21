@@ -22,19 +22,13 @@ catch_rules: #转换规则
         - search: _ 
           replace: 
           - _ 
-          - npm.elemecdn.com/haor-blog-main@1.0.1671548976191
-          - npm.sourcegcdn.com/haor-blog-main@1.0.1671548976191
+          - npm.elemecdn.com/haor-blog-main@1.0.1671623176177
+          - npm.sourcegcdn.com/haor-blog-main@1.0.1671623176177
           - blogcf.abeginner.cn
 
 
         - search: haorblog\.adhy\.cc
           action: skip
-
-        - search: https:\/\/blog.abeginner.cn\/false
-          action: return
-          redirect: 
-            status: 404
-
 
         - search: \.html$
           header:

@@ -10,6 +10,24 @@
     
     
     <url>
+        <loc>https://blog.abeginner.cn/link/</loc>
+        <lastmod>2022-12-22T07:29:49.386Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>https://blog.abeginner.cn/tags/</loc>
+        <lastmod>2022-12-22T07:26:32.998Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
         <loc>https://blog.abeginner.cn/404.html</loc>
         <lastmod>2022-12-21T11:15:31.794Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -28,7 +46,7 @@
     
     
     <url>
-        <loc>https://blog.abeginner.cn/essay/</loc>
+        <loc>https://blog.abeginner.cn/categories/</loc>
         <lastmod>2022-12-20T15:08:59.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -37,8 +55,8 @@
     
     
     <url>
-        <loc>https://blog.abeginner.cn/categories/</loc>
-        <lastmod>2022-11-16T16:50:28.329Z</lastmod>
+        <loc>https://blog.abeginner.cn/essay/</loc>
+        <lastmod>2022-12-20T15:08:59.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

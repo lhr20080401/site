@@ -35,4 +35,3 @@ function switchDarkMode(){
   typeof FB === 'object' && window.loadFBComment()
   typeof runMermaid === 'function' && window.runMermaid()
   }
-

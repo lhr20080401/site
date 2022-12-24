@@ -1,4 +1,8 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>解决butterfly访问速度慢的问题 | haor</title><meta name="author" content="haor"><meta name="copyright" content="haor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="原先我觉得我博客慢是因为我的源站延迟高，带宽小，因为没备案的缘故使用不了国内的cdn，我也没办法备案，之前也用过vercel，感觉速度还是慢，于是我打开控制台仔细琢磨了一下，发现butterfly有大量的依赖，那些依赖的源都是jsdelivr的，之前确实挺快的，但是现在jsdelivr的备案掉了，国内访问会被指向国外的节点，因为绕路的原因，速度并不好，于是我就去网上找了更改这些依赖链接的方法，这是">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><!-- hexo injector head_begin start -->
+<script src="/js/clientworker.js"></script>
+
+<script src="/js/autoupdate.js"></script>
+<!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>解决butterfly访问速度慢的问题 | haor</title><meta name="author" content="haor"><meta name="copyright" content="haor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="原先我觉得我博客慢是因为我的源站延迟高，带宽小，因为没备案的缘故使用不了国内的cdn，我也没办法备案，之前也用过vercel，感觉速度还是慢，于是我打开控制台仔细琢磨了一下，发现butterfly有大量的依赖，那些依赖的源都是jsdelivr的，之前确实挺快的，但是现在jsdelivr的备案掉了，国内访问会被指向国外的节点，因为绕路的原因，速度并不好，于是我就去网上找了更改这些依赖链接的方法，这是">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决butterfly访问速度慢的问题">
 <meta property="og:url" content="https://blog.abeginner.cn/posts/cdn.html">

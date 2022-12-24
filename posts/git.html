@@ -1,4 +1,8 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>记一次git的使用错误：error: src refspec main does not match any | haor</title><meta name="author" content="haor"><meta name="copyright" content="haor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="出现这个错误的原因基本都是git的默认分支是master，而github是main，所以需要 1git branch -m master main  来更改本地仓库分支 所以现在git上传的代码应该依次为 1234567git init # 在该文件夹中创建本地仓库git branch -m master main 更改本地仓库分支git add . # 添加该文件夹下的所有文件到本地仓库git">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><!-- hexo injector head_begin start -->
+<script src="/js/clientworker.js"></script>
+
+<script src="/js/autoupdate.js"></script>
+<!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>记一次git的使用错误：error: src refspec main does not match any | haor</title><meta name="author" content="haor"><meta name="copyright" content="haor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="出现这个错误的原因基本都是git的默认分支是master，而github是main，所以需要 1git branch -m master main  来更改本地仓库分支 所以现在git上传的代码应该依次为 1234567git init # 在该文件夹中创建本地仓库git branch -m master main 更改本地仓库分支git add . # 添加该文件夹下的所有文件到本地仓库git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记一次git的使用错误：error: src refspec main does not match any">
 <meta property="og:url" content="https://blog.abeginner.cn/posts/git.html">

@@ -1,4 +1,8 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>上传博客到npm，并分流到npm镜像提升速度，可绕备 | haor</title><meta name="author" content="haor"><meta name="copyright" content="haor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言之前看过w03.cc的文章，但是他只是上传到npm并更改package.json里的代码，我也有对应的实现方法，见 haor (abeginner.cn) 我是把package.json和cw配置项里的分流地址版本都改了，因为饿了么和其他国内的npm镜像基本都是回源有问题不能直接获取最新版本，只能靠指定版本使用，但是要注意的是，我之前那篇文章写的不详细，有一些小细节会出错，比如hexo配置要填">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><!-- hexo injector head_begin start -->
+<script src="/js/clientworker.js"></script>
+
+<script src="/js/autoupdate.js"></script>
+<!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>上传博客到npm，并分流到npm镜像提升速度，可绕备 | haor</title><meta name="author" content="haor"><meta name="copyright" content="haor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言之前看过w03.cc的文章，但是他只是上传到npm并更改package.json里的代码，我也有对应的实现方法，见 haor (abeginner.cn) 我是把package.json和cw配置项里的分流地址版本都改了，因为饿了么和其他国内的npm镜像基本都是回源有问题不能直接获取最新版本，只能靠指定版本使用，但是要注意的是，我之前那篇文章写的不详细，有一些小细节会出错，比如hexo配置要填">
 <meta property="og:type" content="article">
 <meta property="og:title" content="上传博客到npm，并分流到npm镜像提升速度，可绕备">
 <meta property="og:url" content="https://blog.abeginner.cn/posts/871bcfa.html">

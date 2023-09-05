@@ -22,8 +22,8 @@ catch_rules: #转换规则
         - search: _ 
           replace: 
           - _ 
-          - npm.elemecdn.com/haor-blog-main@1.0.1691743538811
-          - npm.sourcegcdn.com/haor-blog-main@1.0.1691743538811
+          - npm.elemecdn.com/haor-blog-main@1.0.1693910317753
+          - npm.sourcegcdn.com/haor-blog-main@1.0.1693910317753
           - blogcf.abeginner.cn
 
 
